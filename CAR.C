@@ -26,7 +26,7 @@ line(50,150,50,100);delay(1000);
  int i;
  for(i=0;i<=1000;i=i+10)
  {
- setcolor(YELLOW);
+ setcolor(i+i*2);
 line(50+i,100,100+i,100);
 line(100+i,100,150+i,50);
 line(150+i,50,400+i,50);
