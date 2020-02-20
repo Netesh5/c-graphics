@@ -1,0 +1,48 @@
+#include<conio.h>
+#include<graphics.h>
+#include<dos.h>
+void main()
+{
+int gd=DETECT,gm,x,y,i;
+initgraph(&gd,&gm,"C:\\TURBOC3\\BGI");
+x=getmaxx()/2;
+y=getmaxy()/2;
+line(x-300,y,x-200,y);delay(100);
+line(x-300,y+40,x-200,y+40);delay(100);
+arc(x-200,y+20,-90,-270,20);delay(100);
+line(x-300,y,x-400,y+40);delay(100);
+line(x-300,y+40,x-400,y-40);delay(100);
+line(x-250,y,x-270,y-50);delay(100);
+line(x-270,y-50,x-230,y);delay(100);
+line(x-250,y+40,x-270,y+85);delay(100);
+line(x-230,y+40,x-270,y+85);delay(100);
+rectangle(x-250,y+20,x-260,y+10);delay(100);
+rectangle(x-280,y+20,x-270,y+10);delay(100);
+rectangle(x-230,y+20,x-240,y+10);delay(100);
+rectangle(x-210,y+20,x-220,y+10);delay(100);
+line(x-320,y+20,x-300,y-20);delay(100);
+line(x-300,y-20,x-290,y+20);delay(100);
+
+for(i=1;i<=1000;i=i+10)
+{
+line(x-300+i,y,x-200+i,y);
+line(x-300+i,y+40,x-200+i,y+40);
+arc(x-200+i,y+20,-90,-270,20);
+line(x-300+i,y,x-400+i,y+80);
+line(x-300+i,y+40,x-400+i,y-80);
+line(x-250+i,y,x-270+i,y-50);
+line(x-270+i,y-50,x-230+i,y);
+line(x-250+i,y+40,x-270+i,y+85);
+line(x-230+i,y+40,x-270+i,y+85);
+rectangle(x-250+i,y+20,x-260+i,y+10);
+rectangle(x-280+i,y+20,x-270+i,y+10);
+rectangle(x-230+i,y+20,x-240+i,y+10);
+rectangle(x-210+i,y+20,x-220+i,y+10);
+line(x-320+i,y+20,x-300+i,y-20);
+line(x-300+i,y-20,x-290+i,y+20);
+delay(70);
+cleardevice();
+ }
+ getch();
+ closegraph();
+}
