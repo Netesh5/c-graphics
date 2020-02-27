@@ -104,6 +104,14 @@ for(i=0;i<=200;i=i+10)
   floodfill(x+i,y-i,border_color);
   delay(50);
   cleardevice();
+  if(i==200)
+  {
+      circle(x+180,y-200,10);
+      circle(x+220,y-200,10);
+      circle(x+260,y-200,10);
+      circle(x+300,y-200,10);
+
+  }
 }// CAR GAME LOADING
 for(i=1;i<=7;i=i+1)
     {
